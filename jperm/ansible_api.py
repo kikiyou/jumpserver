@@ -182,7 +182,7 @@ class Command(MyInventory):
         super(Command, self).__init__(*args, **kwargs)
         self.results_raw = {}
 
-    def run(self, command, module_name="command", timeout=10, forks=10, pattern=''):
+    def run(self, command, module_name="command", timeout=10, forks=10, pattern='all'):
         """
         run command from andible ad-hoc.
         command  : 必须是一个需要执行的命令字符串， 比如 
